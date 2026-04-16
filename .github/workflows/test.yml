@@ -9,5 +9,8 @@ jobs:
   validar-push-dev:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code :
+        uses: actions/checkout@v3
+
       - name: Checkout index :
         run: test -f index.html
